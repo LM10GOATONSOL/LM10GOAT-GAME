@@ -1,0 +1,17 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #1a1a1a;
+    color: white;
+}
+#customization {
+    margin-top: 20px;
+}
+canvas {
+    display: block;
+    margin: 20px auto;
+    background: green;
+    border: 2px solid white;
+}

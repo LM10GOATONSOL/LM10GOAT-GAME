@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LM10GOAT Football MVP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="manifest" href="manifest.json">
+    <script>
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js').then(function(registration) {
+            console.log('ServiceWorker registered:', registration);
+        }).catch(function(error) {
+            console.log('ServiceWorker registration failed:', error);
+        });
+    }
+    </script>
+</head>
+<body>
+    <div id="customization">
+        <h2>Customize Your Player</h2>
+        <input type="text" id="playerName" placeholder="Enter your name">
+        <label for="jerseyColor">Jersey Color:</label>
+        <input type="color" id="jerseyColor" value="#ff0000">
+        <button onclick="startGame()">Start Game</button>
+    </div>
+    <canvas id="gameCanvas" width="800" height="500"></canvas>
+    <script src="main.js"></script>
+</body>
+</html>
